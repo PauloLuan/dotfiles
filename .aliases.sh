@@ -12,3 +12,5 @@ alias ll='ls -alhF'
 alias rm='__git_rm'
 alias mv='__git_mv'
 alias git-remove-branchs='git branch -D $(git branch | grep -v "*\|master")'
+
+alias webstorm="cd ~/dev/webstorm/bin/ && ./webstorm.sh"
