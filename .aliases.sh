@@ -14,3 +14,4 @@ alias mv='__git_mv'
 alias git-remove-branchs='git branch -D $(git branch | grep -v "*\|master")'
 
 alias webstorm="cd ~/dev/webstorm/bin/ && ./webstorm.sh"
+alias up="sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade"
