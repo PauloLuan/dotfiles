@@ -15,3 +15,4 @@ alias git-remove-branchs='git branch -D $(git branch | grep -v "*\|master")'
 
 alias webstorm="cd ~/dev/webstorm/bin/ && ./webstorm.sh"
 alias up="sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade"
+alias formatCode="find -regex \".*\.\(js\|json\|css\|html\)\"  -not -path \"./bower_components/*\"  -not -path \"./node_modules/*\"  -not -path \"./dist/*\"  -not -path \"./.publish/*\"  -not -path \"./.tmp/*\"  | xargs js-beautify --quiet --replace"
