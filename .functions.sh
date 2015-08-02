@@ -20,6 +20,16 @@ function remove_trailing_spaces {
         xargs sed -i 's/[[:space:]]\+$//'
 }
 
+function format_js {
+    find -regex ".*\.\(js\|json\|css\|html\)" \
+    	-not -path "./bower_components/*" \
+    	-not -path "./node_modules/*" \
+    	-not -path "./dist/*" \
+    	-not -path "./.publish/*" \
+   	 -not -path "./.tmp/*" \
+    	| xargs js-beautify --quiet --replace
+}
+
 function update_fonts {
     find ~/Dropbox/fonts -regex '.*\.ttf\|.*\.otf' -exec cp '{}' ~/.local/share/fonts/ \;
 }
