@@ -1,20 +1,22 @@
 [global_config]
+  window_state = maximise
 [keybindings]
-[profiles]
-  [[default]]
-    palette = "#2e3436:#cc0000:#8bc058:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#9dcc6f:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    background_darkness = 0.73
-    use_system_font = False
-    foreground_color = "#dadada"
-    font = Ubuntu Mono 13
-    background_color = "#282a36"
-    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.78
+    background_image = None
+    background_type = transparent
+    font = Ubuntu Mono 13
+    foreground_color = "#ffffff"
+    palette = "#2e3436:#cc0000:#8bc058:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#9dcc6f:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollback_infinite = True
+    use_system_font = False

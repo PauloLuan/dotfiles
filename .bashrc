@@ -1,4 +1,8 @@
-set -o vi
+# If ~./inputrc doesn't exist yet, first include the original /etc/inputrc so we don't override it
+if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
+
+# Add option to ~/.inputrc to enable case-insensitive tab completion
+echo 'set completion-ignore-case On' >> ~/.inputrc
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
